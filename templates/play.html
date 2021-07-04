@@ -2,15 +2,31 @@
 
 {% block content %}
 
-<h1>Make your choice!(Rock Paper Scissors)</h1>
+<form class="game-form" action="/play" method="POST">
+    <label for="name">Please enter your name!</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <br>
+    <label for="choice">Choose your hand!!</label>
+        <select id="choice" name="choice">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Play!">
+       <ul>    
+            <li>Rock &#x1Faa8; </li>
+            <li>paper &#x1f4c4;</li>
+            <li>Scissors &#x2701; </li>   
+            
+            
+        </ul>
+    </div>
 
-<div id="container-choices">
-    <p>Player 1 chose {{ player1.choice }}</p>
-    <p>Player 2 chose {{ player2.choice }}</p>
-    <p>The result is:{{ result }}</p>
-    
-    <p>Result is:{{ result }}</p>
+</form>
     
 </div>
 
-{% endblock %} 
+{% endblock %}

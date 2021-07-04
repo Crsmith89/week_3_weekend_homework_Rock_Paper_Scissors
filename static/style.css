@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    background-color: rgb(223, 228, 236);
+    color: white
+    padding: 15px;
+    width: 90px;
+    text-align: :right
+    }
+
+body > footer > p{
+    text-align: center;
+    color:blue
+}
+
+.play-button{
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+}

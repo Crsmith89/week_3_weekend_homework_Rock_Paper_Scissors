@@ -6,17 +6,22 @@ class Game:
     def play_game(self, player_1, player_2):
 
         if player_1.choice == "rock" and player_2.choice == "scissors":
-            return "You win!!"
+            return "Winner, well done"
         elif player_1.choice == "rock" and player_2.choice == "rock":
-            return "Draw!! go again"
+            return "Draw!! we go again"
         elif  player_1.choice == "paper" and player_2.choice == "rock":
-            return "You win!!"
+            return "Winner, well done"
         elif player_1.choice == "paper" and player_2.choice == "paper":
-            return "DRAW!! go again"
+            return "DRAW!! we go again"
         elif player_1.choice == "scissors" and player_2.choice == "paper":
-            return "You WIN!"
+            return "Winner, well done"
         elif player_1.choice == "scissors" and player_2.choice == "scissors":
-            return "Draw!! go again"
+            return "Draw!! we go again"
         else:
             return "Loooooser!"
-        
+            
+# computer extensions
+    def gen_computer_player(self):
+        choices = ["rock", "paper", "scissors"]
+        computer_choice = random.choice(choices)
+        computer = Player("Computer", computer_choice)        

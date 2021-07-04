@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} Rock Paper Scissors</title>
-</head>
-<body>
-    <h1>Lets have a game of Rock Paper Scissors!</h1>
-    <p>Press <span>Play</span> to start a game.</p>
+{% extends "base.html" %}
 
-    <button id="play-button" type="button"><a href="/play">Play</a></button>
+{% block content %}
 
-    <div id="rules">
-        <h3>Rules of Rock Paper Scissors</h3>
-        <ul>    
-            <li>Rock wins against Scissors but looses against Paper.</li>
-            <li>Scissors wins against Paper but looses against Rock.</li>
-            <li>Paper wins against Rock but looses against Scissors. </li>   
-        </ul>
+    <h1 id="main-title">Rock Paper Scissors</h1>
+    <div class="container">
+        <h2>Welcome, Lets have a game!!</h2>
+        <p>Press <span>Play</span> below to start the game</p>
+        <button id="play-button" type="button"><a href="/play">Play</a></button>
     </div>
 
-</body>
-</html> 
+{% endblock %}

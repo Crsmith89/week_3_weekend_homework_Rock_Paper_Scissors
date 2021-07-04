@@ -3,11 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>Rock Paper Scissors!</title>
     </head>
     <body>
+        <header>
+            <ul>
+                <li class="navLink"><a href="/">Home</a></li>
+                <li class="navLink"><a href="/rules">Rules</a></li>
+                </ul>
+        </header>
         {% block content %}
         {% endblock %}
-    </body>
-</html> 
 
+        
+        <footer>
+            <p>Wee Games Craig Smith E50</p>
+        </footer>
+    </body>
+</html>
