@@ -11,7 +11,8 @@ def index():
 @app.route('/play')
 def play():
     return render_template('play.html', title='Play')
-# play against cpu
+
+# play against computer
 @app.route('/play', methods=['POST'])
 def play_against_computer():
     name = request.form['name']
@@ -32,7 +33,7 @@ def display_rules():
 @app.route('/play/<player1_choice>/<player2_choice>')
 def start(player1_choice, player2_choice):
     player_1 = Player("Player 1", player1_choice)
-    player_2 = Player("Player 2", player1_choice)
+    player_2 = Player("Player 2", player2_choice)
     game = Game()
     result = game.play_game(player_1, player_2)
     print(result)

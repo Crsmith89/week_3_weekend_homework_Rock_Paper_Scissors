@@ -24,4 +24,4 @@ class Game:
     def gen_computer_player(self):
         choices = ["rock", "paper", "scissors"]
         computer_choice = random.choice(choices)
-        computer = Player("Computer", computer_choice)        
+        computer_choice = Player("Computer", computer_choice)        
