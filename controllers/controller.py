@@ -11,7 +11,7 @@ def index():
 @app.route('/play')
 def play():
     return render_template('play.html', title='Play')
-
+# play against cpu
 @app.route('/play', methods=['POST'])
 def play_against_computer():
     name = request.form['name']
