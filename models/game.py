@@ -21,7 +21,7 @@ class Game:
             return "Loooooser!"
             
 # computer extensions
-    def gen_computer_player(self):
+    def computer_picks(self):
         choices = ["rock", "paper", "scissors"]
         computer_choice = random.choice(choices)
         computer_choice = Player("Computer", computer_choice)        
